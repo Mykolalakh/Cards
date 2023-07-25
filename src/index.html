@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <title>Cards</title>
+  </head>
+  <body>
+    @@include('html/header.html', {})
+    <main>
+      <div class="filter__wrapper">
+        <div class="filter__container">
+          <input
+            class="filter__input"
+            type="search"
+            id="title"
+            name="title"
+            placeholder="Search by title"
+          />
+
+          <select name="priority" id="priority" class="filter__priority">
+            <option value="">All</option>
+            <option value="normal">normal</option>
+            <option value="priority">Priority</option>
+            <option value="urgent">urgent</option>
+          </select>
+
+          <button type="submit" class="filter__btn">Search</button>
+        </div>
+      </div>
+
+      <div class="wrapper-cards"></div>
+
+      <div id="cards-container">
+        <h1 id="no-cards-message" class="hidden">No items have been added</h1>
+      </div>
+    </main>
+    <script src="./dist/js/app.min.js"></script>
+  </body>
+</html>

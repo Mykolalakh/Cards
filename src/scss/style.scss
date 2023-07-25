@@ -1,0 +1,482 @@
+/*nav*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.logo {
+
+  // .logo__link
+
+  &__link {
+    text-decoration: none;
+  }
+
+  // .logo__text
+
+  &__text {
+    display: flex;
+    background-image: url(../img/logo-doctor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #44BEA9;
+    /* text-decoration: none; */
+    /* font-size: 23px; */
+    font-weight: 700;
+    line-height: 33px;
+    width: 68px;
+    height: 64px;
+    margin-left: 8px;
+    font-family: "Roboto", sans-serif;
+
+    // .logo__text_first
+
+    &_first {
+      margin-left: 64px;
+      font-size: 18px;
+      padding-top: 7px;
+    }
+
+    // .logo__text_second
+
+    &_second {
+      font-size: 18px;
+
+    }
+  }
+}
+
+
+
+/*LOGIN FORM*/
+
+/*LOGIN BTN*/
+
+
+
+
+
+/* Стилі для текстового поля */
+// #email,
+// #password {
+//   display: block;
+//   padding: 10px;
+//   margin-bottom: 20px;
+//   border: 1px solid #ccc;
+//   border-radius: 5px;
+//   font-size: 16px;
+//   width: 395px;
+// }
+
+/* Стилі для кнопки */
+// #submit-button {
+//   display: inline-block;
+//   padding: 10px 20px;
+//   background-color: #4CAF50;
+//   color: #fff;
+//   border: none;
+//   border-radius: 5px;
+//   font-size: 16px;
+//   cursor: pointer;
+// }
+
+/*EYE*/
+
+// .password-block {
+//   display: flex;
+//   align-items: baseline;
+//   position: relative;
+//   justify-content: flex-end;
+// }
+
+// .password-block i{
+//   position: absolute;
+//   right: 16px;
+//   top: 14px;
+// }
+
+/* Стилі для кнопки при наведенні */
+// #submit-button {
+//   background-color: #3e8e41;
+// }
+
+// .incorrectInput {
+//   color: red;
+//   text-align: center;
+// }
+
+// .hidden {
+// display: none;
+// }
+
+/* ------------------------modal login ------------------------ */
+.log-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 150px;
+}
+
+.form-modal {
+  width: 400px;
+  padding: 50px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.form-modal input {
+  width: 100%;
+}
+///
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal.active {
+  display: block;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 37px;
+  border: 1px solid #888;
+  width: 400px;
+}
+
+/* The Close Button */
+.close {
+  color: green;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.edit {
+  display: block;
+}
+/**/
+
+
+/*CREATE VISIT*/
+
+/*Create Visit BTN*/
+#registration-btn {
+  background-color: #44BEA9;
+  padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 96px;
+    color: white;
+    font-size: 14px;
+
+}
+
+#registration-form, #edit-form {
+  display: flex;
+  flex-direction: column;
+  // width: 200px;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  row-gap: 17px;
+  /* padding-top: 45px; */
+}
+
+#registration-form input{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+.hidden{
+  display: none;
+}
+#no-cards-message {
+  text-align: center;
+}
+#edit-form input{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+
+}
+.registration-submit-btn {
+  background-color: #3e8e41;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.visit-submit-btn, .visit-edit-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #44BEA9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.cardiologist-fields {
+  display: flex;
+  flex-direction: column;
+  // width: 200px;
+  row-gap: 15px;
+  width: 100%;
+}
+
+.dentist-fields {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+  // width: 192px;
+  // width: 100%;
+}
+.therapist-fields {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  width: 100%;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/**/
+
+
+/*Login BTN*/
+#login-form {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
+  row-gap: 7px;
+}
+/**/
+
+#login-form input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+.login-submit-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #44BEA9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#login-btn {
+  background-color: #44BEA9;
+  padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 74px;
+    color: white;    
+    font-size: 14px;
+}
+
+/**/
+.headerText {
+  color: green;
+  margin: 10px;
+}
+
+
+
+
+/*******/
+.wrapper-cards{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 64px 15px;
+margin-top: 42px;
+}
+
+.card{
+  padding: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+.card-list{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px;
+}
+.card-item{
+
+}
+
+.card-item-span{
+  font-weight: bold;
+}
+.show-more{
+    background-color: #44BEA9;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 85px;
+    color: white;
+    font-size: 14px;
+}
+.button-edit{
+  margin: 0 0 0 40px;
+  background-color: #44BEA9;
+  padding: 7px 1px 7px 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 56px;
+  color: white;
+  font-size: 14px;
+}
+
+
+/*FILTER*/
+
+
+.filter {
+
+  // .filter__wrapper
+
+  &__wrapper {
+  }
+
+  // .filter__container
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 21px;
+  }
+
+  // .filter__input
+
+  &__input {
+    padding: 10.5px;
+    margin-bottom: 20px;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  // .filter__status
+
+  &__status {
+    width: 190px;
+    border: 0.5px solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  // .filter__priority
+
+  &__priority {
+    width: 190px;
+    border: 0.5px solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  // .filter__btn
+
+  &__btn {
+    background-color: #44BEA9;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 74px;
+    color: white;
+    font-size: 14px;
+  }
+}
+.status {
+
+  // .status_item
+
+  &_item {
+  }
+}
+.priority {
+
+  // .priority_item
+
+  &_item {
+  }
+}
+
+
+
+/**/
